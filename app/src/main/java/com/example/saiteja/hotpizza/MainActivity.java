@@ -8,9 +8,9 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    public void getMovDesc(View v) {
+    public void getMovies(View v) {
         Intent intent = new Intent(this, MoviesActivity.class);
-        EditText movie_name = (EditText)v.findViewById(R.id.editText);
+        EditText movie_name = (EditText)findViewById(R.id.editText);
         intent.putExtra("name",movie_name.getText().toString());
         startActivity(intent);
     }
